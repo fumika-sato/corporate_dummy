@@ -10,6 +10,7 @@ body {
   color: #000000;
   font-size: 1.4rem;
   background-color: #F0F0F0;
+  font-family: Arial,sans-serif;
   }
 img {
   max-width: 100%;
@@ -42,6 +43,7 @@ h2,h3 {
 .logo {
   width: 100px;
   line-height: 1px;
+  margin-right: 60px;
 }
 .section_title {
   font-size: 3.6rem;
@@ -80,6 +82,9 @@ header {
 }
 .nav_item {
   margin-left: 30px;
+}
+.nav_item:first-child {
+  margin-left: 0;
 }
 .btn {
   width: 200px;
@@ -145,21 +150,86 @@ about
   display: flex;
 }
 .about_img {
-  width: 54%;
+  width: calc(760/1400*100%);
 }
 .about_img img{
-  max-width: 100%;
+  width: 100%;
   height: 400px;
   object-fit: cover;
 }
 .about_text {
-  width: 48%;
+  width: calc(640/1400*100%);
+  padding: 180px 70px 0;
+}
+.about_text p {
+  line-height: 2.2;
 }
 
 /*===============================
 business
 ===============================*/
+.business {
+  margin-bottom: 120px;
+}
+.business h3 {
+  position: relative;
+  margin: 0 0 10px 18px;
+}
+.business h3:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: -18px;
+}
+.business_contents {
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.business_01 {
+  padding-top: 100px;
+}
+.business_01,
+.business_02 {
+  width: calc(368/800*100%);
+}
+.business_item {
+  margin-bottom: 50px;
+}
+.business_item:nth-of-type(2n) {
+  margin-bottom: 0;
+}
 
+/*===============================
+company
+===============================*/
+.company {
+  margin-bottom: 120px;
+}
+.company .wrapper {
+  position: relative;
+}
+.company_text {
+  width: calc(567/1000*100%);
+  background-color: #fff;
+  padding: 100px 60px;
+}
+.company_img {
+  width: calc(547/1000*100%);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.company_img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
 
 /*===============================
 footer
@@ -174,6 +244,7 @@ footer {
 }
 address {
   font-style: normal;
+  line-height: 1.5;
 }
 .copyright {
   font-size: 1.2rem;
