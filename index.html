@@ -11,18 +11,20 @@
   <body>
     <!--// header -->
     <header>
-      <div class="header_inner">
-        <h1 class="logo">
-          <a href="#"><img src="img/logo.png" alt="WED"></a>
-        </h1>
-        <nav class="header_nav">
-          <ul class="nav_list">
-            <li class="nav_item"><a href="#news">NEWS</a></li>
-            <li class="nav_item"><a href="#about">ABOUT</a></li>
-            <li class="nav_item"><a href="#business">BUSINESS</a></li>
-            <li class="nav_item"><a href="#company">COMPANY</a></li>
-          </ul>
-        </nav>
+      <div class="wrapper">
+        <div class="header_inner">
+          <h1 class="logo">
+            <a href="#"><img src="img/logo.png" alt="WED"></a>
+          </h1>
+          <nav class="header_nav">
+            <ul class="nav_list">
+              <li class="nav_item"><a href="#news">NEWS</a></li>
+              <li class="nav_item"><a href="#about">ABOUT</a></li>
+              <li class="nav_item"><a href="#business">BUSINESS</a></li>
+              <li class="nav_item"><a href="#company">COMPANY</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
       <a href="#" class="btn">資料請求</a>
     </header>
@@ -37,7 +39,7 @@
       <!--// news -->
       <section class="news" id="news">
         <div class="wrapper">
-          <h2 class="section_title">NEWS<span>ニュース</span></h2>
+          <h2 class="section_title"><span class="main">NEWS</span><span class="sub">ニュース</span></h2>
           <ul class="news_list">
             <li>
               <div class="news_list_date">
@@ -70,7 +72,7 @@
           <img src="img/img_about.jpg" alt="テキスト">
         </div>
         <div class="about_text">
-          <h2 class="section_title">ABOUT<span>私たちについて</span></h2>
+          <h2 class="section_title"><span class="main">ABOUT</span><span class="sub">私たちについて</span></h2>
           <p>テキストテキストテキストテキストテキストテキスト テキストテキストテキ
             ストテキストテキストテキスト<br>
             テキストテキストテキストテキストテキストテキスト テキストテキストテキ
@@ -83,7 +85,7 @@
       <!--// business -->
       <section class="business" id="business">
         <div class="wrapper">
-          <h2 class="section_title">BUSINESS<span>事業内容</span></h2>
+          <h2 class="section_title"><span class="main">BUSINESS</span><span class="sub">事業内容</span></h2>
           <div class="business_contents">
             <div class="business_01">
               <div class="business_item">
@@ -111,9 +113,9 @@
       <!-- business //-->
       <!--// company -->
       <section class="company" id="company">
-        <div class="wrapper">
+        <div class="wrapper company_contents">
           <div class="company_text">
-            <h2 class="section_title">COMPANY<span>会社情報</span></h2>
+            <h2 class="section_title"><span class="main">COMPANY</span><span class="sub">会社情報</span></h2>
             <dl>
               <dt>会社名</dt>
               <dd>ウェブエンターテイメントデザイン株式会社</dd>
@@ -126,7 +128,10 @@
               <dt>資本金</dt>
               <dd>3,000,000円</dd>
               <dt>事業内容</dt>
-              <dd>Web制作・マーケティング<br>インターネットメディア事業<br>プロモーション企画・制作<br>ソーシャル企画・運営</dd>
+              <dd>Web制作・マーケティング</dd>
+              <dd class="dd_only">インターネットメディア事業</dd>
+              <dd class="dd_only">プロモーション企画・制作</dd>
+              <dd class="dd_only">ソーシャル企画・運営</dd>
             </dl>
           </div>
           <div class="company_img">
