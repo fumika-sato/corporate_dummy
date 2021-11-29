@@ -365,6 +365,7 @@ company
   .company_text dt,
   .company_text dd  {
     width: 100%;
+    margin-bottom: 5px;
   }
   .company_text dt {
     margin-top: 20px;
