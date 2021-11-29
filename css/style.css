@@ -218,7 +218,7 @@ about
 }
 .about_text {
   width: calc(640/1400*100%);
-  padding: 180px calc(70/1400*100%) 0;
+  padding: 180px 70px 0;
 }
 .about_text p {
   line-height: 2.2;
@@ -261,7 +261,7 @@ business
   left: -18px;
 }
 .business_contents {
-  padding: 0 calc(100/1400*100%);
+  padding: 0 100px;
   display: flex;
   justify-content: space-between;
 }
@@ -294,6 +294,9 @@ business
   .business_01 {
     margin: 0 0 30px 0;
   }
+  .business_item {
+    margin-bottom: 30px;
+  }
 }
 
 /*===============================
@@ -308,7 +311,7 @@ company
 .company_text {
   width: calc(567/1000*100%);
   background-color: #fff;
-  padding: 100px 60px;
+  padding: 100px 120px 100px 60px;
 }
 .company_text dl {
   display: flex;
@@ -319,13 +322,13 @@ company
   margin-bottom: 10px;
 }
 .company_text dt {
-  width: calc(87/447*100%);
+  width: calc(85/390*100%);
 }
 .company_text dd {
-  width: calc(360/447*100%);
+  width: calc(305/390*100%);
 }
 .company_text .dd_only {
-  margin-left: calc(87/447*100%);
+  margin-left: calc(85/390*100%);
 }
 .company_img {
   width: calc(547/1000*100%);
