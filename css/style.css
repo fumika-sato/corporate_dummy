@@ -47,7 +47,7 @@ h2,h3 {
 .logo {
   width: 100px;
   line-height: 1px;
-  margin-right: 60px;
+  margin-right: 45px;
 }
 .section_title {
   margin-bottom: 50px;
@@ -97,11 +97,8 @@ header {
 .nav_list {
   display: flex;
 }
-.nav_item {
-  margin-left: 30px;
-}
-.nav_item:first-child {
-  margin-left: 0;
+.nav_item  a {
+  padding: 15px;
 }
 .btn {
   width: 200px;
@@ -116,6 +113,12 @@ header {
   .header_inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+  .nav_item  a {
+    padding: 8px 15px;
+  }
+  .nav_item:first-of-type a {
+    padding-left: 0;
   }
   .logo {
     width: 80px;
@@ -157,13 +160,16 @@ news
 .news_list li {
   width: calc(100%/3);
   border-right: 1px solid #000;
-  padding: 10px 20px;
 }
 .news_list li:last-child {
   border: none;
 }
 .news_list li:first-child {
   padding-left: 0;
+}
+.news_list li a {
+  display: block;
+  padding: 10px 20px
 }
 .news_list_date {
   display: flex;
@@ -172,9 +178,10 @@ news
 } 
 .news_list_date .tag {
   display: inline-block;
-  width: 50px;
-  height: 20px;
-  line-height: 20px;
+  min-width: 50px;
+  padding: 5px;
+  font-size: 1.2rem;
+  line-height: 1;
   background-color: #000000;
   color: #fff;
   text-align: center;
@@ -309,7 +316,7 @@ company
   position: relative;
 }
 .company_text {
-  width: calc(567/1000*100%);
+  width: calc(567/1032*100%);
   background-color: #fff;
   padding: 100px 120px 100px 60px;
 }
@@ -331,7 +338,7 @@ company
   margin-left: calc(85/390*100%);
 }
 .company_img {
-  width: calc(547/1000*100%);
+  width: calc(547/1032*100%);
   position: absolute;
   top: 81px;
   right: 16px;
